@@ -1,0 +1,79 @@
+.heading {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 2vh;
+  display: block;
+}
+.wrapper {
+  display: grid ;
+  align-items: flex-end;
+  max-width: 240px;
+  height: 340px;
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px rgba(52, 53, 99, 0.2),
+    0px 4px 9px rgba(0, 0, 0, 0.05);
+  background-size: 300px;
+  position: relative;
+  margin: 8%;
+
+
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.add-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  background-color: green;
+  transition: 0.2s;
+  &:hover {
+    transform :scale(1.5)
+
+  }
+  &:active{
+    transform:translateY(1px)
+  }
+
+  p {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+  }
+}
+
+.textcontainer {
+  display: grid;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  border-bottom-left-radius:30% ;
+  border-bottom-right-radius:30% ;
+  width: 100%;
+  max-height: 30%;
+  padding: 20px;
+}
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+.cost {
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}

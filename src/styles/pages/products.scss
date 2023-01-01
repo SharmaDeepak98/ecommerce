@@ -1,0 +1,6 @@
+.product-container{
+    display: grid;
+grid-template-columns: repeat(4,auto);
+align-content: center;
+padding-top: 50px;
+}

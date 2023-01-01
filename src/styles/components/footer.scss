@@ -1,0 +1,46 @@
+.footer {
+  min-height: 50vh;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: #353535;
+  justify-content: center;
+  .row {
+    align-items: start;
+  }
+  &-col {
+    cursor: pointer;
+  }
+}
+
+h4 {
+  font-size: 34px;
+  margin: 40px 0px;
+  color: #eaeaea;
+  transition:all 0.2s;
+  &:hover{
+    transform :scale(1.1)
+  }
+}
+
+li {
+  font-size: 24px;
+  color: #eaeaea;
+  padding: 6px;
+  transition:all 0.2s;
+  &:hover{
+    transform :scale(1.1)
+  }
+}
+
+i {
+  font-size: 44px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all 1s ease;
+  background-color: #353535;
+  color: #eaeaea;
+  &:hover {
+    background-color: #eaeaea;
+    color: #353534;
+  }
+}
