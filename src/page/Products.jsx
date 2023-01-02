@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
 
-
 const Products = () => {
   const [ProductsData, setProductsData] = useState([]);
 
@@ -10,7 +9,7 @@ const Products = () => {
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
+        console.log(data);
 
         setProductsData(data.products);
       });
