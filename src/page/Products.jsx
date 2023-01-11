@@ -19,7 +19,7 @@ const Products = () => {
     <>
       <h1 className="heading">Featured products</h1>
       <div className="product-container">
-        {ProductsData.map((product, index) => {
+        {ProductsData.map((product) => {
           return (
             <Card
               key={product.id}

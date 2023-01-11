@@ -15,7 +15,7 @@ function Home() {
           </div>
 
           <div className="col">
-            <img src="images/image1.png" alt="image"></img>
+            <img src="images/image1.png" alt="Pasal"></img>
           </div>
         </div>
       </header>

@@ -8,6 +8,7 @@ export const ShopProvider = ({ children }) => {
 
   const addToCart = (product) => {
     const updatedCart = state.products.concat(product);
+    console.log(updatedCart);
     updatePrice(updatedCart);
     dispatch({
       type: "ADD_TO_CART",
@@ -21,6 +22,7 @@ export const ShopProvider = ({ children }) => {
     const updatedCart = state.products.filter(
       (currentproduct) => currentproduct.name !== product.name
     );
+    console.log(updatedCart);
     updatePrice(updatedCart);
     dispatch({
       type: "REMOVE_FROM_CART",
@@ -58,4 +60,3 @@ const useShop = () => {
 };
 
 export default useShop;
-

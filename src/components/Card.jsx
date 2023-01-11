@@ -25,44 +25,29 @@ const Card = ({ name, imageUrl, price }) => {
     }
   };
 
-  return(
-  <>
-  <div
-    className="wrapper"
-    style={{ backgroundImage: `url(${imageUrl[0]})` }}>
-    <div
-      className="add-btn"
-      onClick={handleClick}
-      style={{ background: isInCart ? "red" : "green" }}>
-      <p>{isInCart ? "-" : "+"}</p>
-    </div>
-    <div className="textcontainer">
-      <div className="title">
-        {name.lenght < 13 ? name : name.toLowerCase().slice(0, 13) + `...`}
+  return (
+    <>
+      <div
+        className="wrapper"
+        style={{ backgroundImage: `url(${imageUrl[0]})` }}
+      >
+        <div
+          className="add-btn"
+          onClick={handleClick}
+          style={{ background: isInCart ? "red" : "green" }}
+        >
+          <p>{isInCart ? "-" : "+"}</p>
+        </div>
+        <div className="textcontainer">
+          <div className="title">
+            {name.lenght < 13 ? name : name.toLowerCase().slice(0, 13) + `...`}
+          </div>
+          <div className="cost">{price}</div>
+        </div>
       </div>
-      <div className="cost">{price}</div>
-    </div>
-  </div>
-</>
-
-
-)
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </>
+  );
+};
 
 // import { useEffect, useState } from "react";
 // import useShop from "../files/shopContext";
@@ -93,24 +78,24 @@ const Card = ({ name, imageUrl, price }) => {
 
 //   // console.log(imageURL);
 //   return (
-    // <>
-    //   <div
-    //     className="wrapper"
-    //     style={{ backgroundImage: `url(${imageURL[0]})` }}>
-    //     <div
-    //       className="add-btn"
-    //       onClick={handleClick}
-    //       style={{ background: isInCart ? "red" : "green" }}>
-    //       <p>{isInCart ? "-" : "+"}</p>
-    //     </div>
-    //     <div className="textcontainer">
-    //       <div className="title">
-    //         {name.lenght < 13 ? name : name.toLowerCase().slice(0, 13) + `...`}
-    //       </div>
-    //       <div className="cost">{cost}</div>
-    //     </div>
-    //   </div>
-    // </>
+// <>
+//   <div
+//     className="wrapper"
+//     style={{ backgroundImage: `url(${imageURL[0]})` }}>
+//     <div
+//       className="add-btn"
+//       onClick={handleClick}
+//       style={{ background: isInCart ? "red" : "green" }}>
+//       <p>{isInCart ? "-" : "+"}</p>
+//     </div>
+//     <div className="textcontainer">
+//       <div className="title">
+//         {name.lenght < 13 ? name : name.toLowerCase().slice(0, 13) + `...`}
+//       </div>
+//       <div className="cost">{cost}</div>
+//     </div>
+//   </div>
+// </>
 //   );
 // };
 
